@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+.env
+*.log
+.prettierrc
+
+# Next.js
+.next/
+out/
+
+# IDE & OS files
+.DS_Store
+.idea/
+.vscode/

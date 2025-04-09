@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url("/fonts/Aeonik-Bold.ttf") format("opentype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    src: url("/fonts/Aeonik-Medium.ttf") format("opentype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url("/fonts/Aeonik-Regular.ttf") format("opentype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 300; /* Light */
+    src: url("/fonts/Aeonik-Light.ttf") format("opentype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "SF-Pro-Display";
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    src: url("/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "SF-Pro-Display";
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url("/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "SF-Pro-Display";
+    font-style: normal;
+    font-weight: 300; /* Light */
+    src: url("/fonts/SF-Pro-Display-Light.otf") format("opentype");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "SF-Pro-Display";
+    font-style: normal;
+    font-weight: 200; /* extralight */
+    src: url("/fonts/SF-Pro-Display-Thin.otf") format("opentype");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-Aeonik;
+  }
+}
+@layer components {
+  .bidblock-zebra > div:nth-child(2n + 1) {
+    @apply bg-primary bg-opacity-5;
+  }
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+.section-container {
+  @apply relative mx-auto max-w-8xl py-24 px-6 xl:px-12 2xl:px-0;
+}
