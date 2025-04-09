@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import daisyui from "daisyui";
+/* import daisyui from "daisyui"; */
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,8 +37,8 @@ export default {
       },
     },
   },
-  plugins: [daisyui],
-  daisyui: {
+  /*  plugins: [daisyui], */
+  /*  daisyui: {
     themes: [
       {
         bidblock: {
@@ -84,5 +84,5 @@ export default {
         },
       },
     ],
-  },
+  }, */
 } satisfies Config;
